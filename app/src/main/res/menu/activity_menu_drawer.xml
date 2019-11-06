@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/agreNece"
+
+            android:title="¿Que se necesita?" />
+        <item
+            android:id="@+id/agregar"
+
+            android:title="Agregar vivieres" />
+        <item
+            android:id="@+id/entregados"
+
+            android:title="Viveres entregados" />
+        <item
+            android:id="@+id/enAlmacen"
+
+            android:title="Viveres en almacen" />
+        <item
+            android:id="@+id/salir"
+
+            android:title="Logout" />
+
+    </group>
+
+
+
+
+</menu>

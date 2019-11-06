@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".entregados">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cantidad"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="96dp"
+            android:text="Viveres entregados"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/idp"
+
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cantidad"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:hint="Id del producto"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/lugar"
+
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/registrar"
+            android:layout_alignLeft="@+id/cantidad"
+            android:layout_alignStart="@+id/cantidad"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Lugar a donde se entrega"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="22dp"
+            android:text="Registrar" />
+
+        <EditText
+            android:id="@+id/cantidad"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lugar"
+            android:layout_alignLeft="@+id/idp"
+            android:layout_alignStart="@+id/idp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Cantidad"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+    </RelativeLayout>
+</FrameLayout>

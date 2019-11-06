@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agregar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/idp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="67dp"
+            android:text="Agregar nuevo producto"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/idp"
+
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cantidad"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="92dp"
+            android:ems="10"
+            android:hint="Nombre del producto"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="22dp"
+            android:text="Agregar" />
+
+        <EditText
+            android:id="@+id/cantidad"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/vencimiento"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="42dp"
+            android:ems="10"
+            android:hint="Cantidad"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/vencimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/plus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="27dp"
+            android:text="Fecha de vencimiento"
+            android:textSize="24sp" />
+    </RelativeLayout>
+</FrameLayout>
